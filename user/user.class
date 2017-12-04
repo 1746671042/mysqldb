@@ -1,0 +1,14 @@
+<?php
+require './common.class.php';
+require '../mysqldbtwo.php';
+class user extends common{
+    public function login(){
+        $name = $_POST["name"];
+        $pwd = $_POST["pwd"];
+        
+       
+        
+        echo parent::json($code,$message,$data);
+    }
+}
+
